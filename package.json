@@ -40,6 +40,7 @@
     "mime-db": "^1.24.0",
     "moment": "^2.17.1",
     "mongoose": "^4.6.7",
+    "mongoose-events": "^0.3.9",
     "mongoose-int32": "^0.1.0",
     "mongoose-types": "^1.0.3",
     "ms": "^0.7.1",
