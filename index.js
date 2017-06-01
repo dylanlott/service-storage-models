@@ -3,11 +3,16 @@
 const assert = require('assert');
 const mongoose = require('mongoose');
 const merge = require('merge');
+
+const events = require('mongoose-events').mongooseEventsSerialPlugin;
+console.log('Events: ', events);
+
 require('dotenv').config({ silent: true });
 
 require('mongoose-types').loadTypes(mongoose);
 
 mongoose.Promise = require('bluebird');
+mongoose.plugin(events);
 
 /**
  * MongoDB storage interface
